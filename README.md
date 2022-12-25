@@ -11,7 +11,7 @@
 4. Create a button named character which will find 3rd character of any name.
 5. Create a button named space which will replace space with semicolon
 
-Optional 6. Create a button named sort which will sort the characters of any name.
+Optional <br/> 6. Create a button named sort which will sort the characters of any name.
 
 ==============================================================
 
