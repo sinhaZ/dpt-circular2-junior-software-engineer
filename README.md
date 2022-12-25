@@ -8,7 +8,7 @@
 6. Create a button named character which will find 3rd character of any name.
 7. Create a button named space which will replace space with hyphens.
 
-Optional <br/> 6. Create a button named sort which will sort the characters of any name.
+Optional <br/> 6. Create a button named sort which will sort the characters of any name using bubble sort algorithm..
 
 ==============================================================
 
