@@ -2,14 +2,11 @@
 
 1. Fork this repository.
 2. Clone this repository to your local machine.
-
-==============================================================
-
-1. Make an input field with HTML/CSS named full_name.
-2. Create a button named reverse which will reverse any name.
-3. Create a button named counter which will count vowel in any name.
-4. Create a button named character which will find 3rd character of any name.
-5. Create a button named space which will replace space with semicolon
+3. Make an input field with HTML/CSS named full_name.
+4. Create a button named reverse which will reverse any name.
+5. Create a button named counter which will count vowels in any name.
+6. Create a button named character which will find 3rd character of any name.
+7. Create a button named space which will replace space with hyphens.
 
 Optional <br/> 6. Create a button named sort which will sort the characters of any name.
 
@@ -17,10 +14,10 @@ Optional <br/> 6. Create a button named sort which will sort the characters of a
 
 -   Complete this task using raw PHP or Laravel Framework.
 -   OR complete this task using Javascript Framework.
--   Update your readme file how can we run the proejct.
--   Mention how much time have you spent for this to complete.
+-   Update your readme file on how can we run the project.
+-   Mention how much time have you spent on this to complete.
 
 ==============================================================
 
--   Upload your code on github and send us link.
+-   Upload your code on GitHub and send us the link.
 -   message.to.zahid@gmail.com
