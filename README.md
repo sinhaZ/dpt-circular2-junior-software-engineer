@@ -3,12 +3,13 @@
 1. Fork this repository.
 2. Clone this repository to your local machine.
 3. Make an input field with HTML/CSS named full_name.
-4. Create a button named reverse which will reverse any name.
-5. Create a button named counter which will count vowels in any name.
-6. Create a button named character which will find 3rd character of any name.
-7. Create a button named space which will replace space with hyphens.
+4. You can add Bootstrap or tailwind CSS if you know how to do that.
+5. Create a button named reverse which will reverse any name.
+6. Create a button named counter which will count vowels in any name.
+7. Create a button named character which will find 3rd character of any name.
+8. Create a button named space which will replace space with hyphens.
 
-Optional <br/> 8. Create a button named sort which will sort the characters of any name using bubble sort algorithm..
+Optional <br/> 9. Create a button named sort which will sort the characters of any name using bubble sort algorithm..
 
 ==============================================================
 
