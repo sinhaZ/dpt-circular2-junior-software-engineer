@@ -39,6 +39,13 @@
       return count($matches[0]);
     }
   ?>
+   <?php 
+    if(isset($_POST['character'])){
+      $result = get3rdChar($_POST['name']);
+  }
+  function get3rdChar($name){
+	  return $name[2]; } 
+  ?>
     <div class="container">
       <div class="main">
         <div class="clientForm">
