@@ -29,6 +29,16 @@
         return $revstr;
       } 
     ?>
+	<?php
+    if(isset($_POST['counter'])){
+      $result = count_Vowels($_POST['name']);
+    }
+
+    function count_Vowels($name){
+      preg_match_all('/[aeiou]/i', $name, $matches);
+      return count($matches[0]);
+    }
+  ?>
     <div class="container">
       <div class="main">
         <div class="clientForm">
