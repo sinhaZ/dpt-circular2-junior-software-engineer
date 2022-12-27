@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+
+*{
+    margin: 500;
+    padding: 50;
+}
+.main{
+    /* background-color: yellow;  */
+    width: 90vw;
+    margin: 55px 50px 75px 100px
+}
+.container{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.clientForm{
+    padding: 0 24px;
+    padding: 120px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.clientForm h1{
+    font-family: 'Source Code Pro', monospace;
+}
+
