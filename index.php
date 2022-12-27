@@ -46,6 +46,16 @@
   function get3rdChar($name){
 	  return $name[2]; } 
   ?>
+    <?php 
+    if(isset($_POST['space'])){
+      $result = spaceReplaceByHypen($_POST['name']);
+    }
+    function spaceReplaceByHypen($name){
+      $str="";
+      $str = str_replace(' ', '-', $name);
+      return $str;
+    }
+  ?>
     <div class="container">
       <div class="main">
         <div class="clientForm">
