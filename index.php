@@ -29,7 +29,7 @@
         return $revstr;
       } 
     ?>
-	<?php
+  <?php
     if(isset($_POST['counter'])){
       $result = count_Vowels($_POST['name']);
     }
@@ -39,14 +39,14 @@
       return count($matches[0]);
     }
   ?>
-   <?php 
+  <?php 
     if(isset($_POST['character'])){
       $result = get3rdChar($_POST['name']);
   }
   function get3rdChar($name){
 	  return $name[2]; } 
   ?>
-    <?php 
+  <?php 
     if(isset($_POST['space'])){
       $result = spaceReplaceByHypen($_POST['name']);
     }
@@ -55,6 +55,20 @@
       $str = str_replace(' ', '-', $name);
       return $str;
     }
+  ?>
+  <?php 
+  if(isset($_POST['sort'])){
+      $result = StrSort($_POST['name']);
+  }
+  function StrSort($name){
+      $letters = str_split(strtolower($name)); sort($letters);
+      $ret = "";
+      foreach($letters as $letter){
+          $ret .= $letter;
+      }
+      return $ret;
+  }
+
   ?>
     <div class="container">
       <div class="main">
