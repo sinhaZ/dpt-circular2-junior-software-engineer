@@ -24,4 +24,12 @@
 .clientForm h1{
     font-family: 'Source Code Pro', monospace;
 }
-
+.mb-3{
+    width: 25vw;
+    border-radius: 4px;
+}
+#clientHelp{
+    font-size: 9px;
+    color: midnightblue;
+    margin: 0 7px;
+}

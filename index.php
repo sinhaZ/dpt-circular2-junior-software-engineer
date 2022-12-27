@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    
     <div class="container">
       <div class="main">
         <div class="clientForm">
@@ -21,14 +22,12 @@
           <form method="post">
             <div class="mb-3">
               <label for="clientName" class="form-label">Full Name</label>
-              <input
-                type="name"
-                class="form-control"
-                id="clientName"
-                name="name"
-              />
+              <input type="name" class="form-control" id="clientName" name="name" "/>
             </div>
-
+            <div class="mb-3">
+              
+              <input type="name" class="form-control" id="result" name="result" value="<?php echo ($result) ?>"/>
+            </div>
             <div id="clientHelp" class="form-text">
               Button description:
               <ul>
@@ -42,34 +41,18 @@
                 </li>
               </ul>
             </div>
-
-            <button
-              type="submit"
-              class="btn btn-outline-primary"
-              name="reverse"
-            >
+           
+            <button type="submit" class="btn btn-outline-primary" name="reverse">
               Reverse
             </button>
-            <button
-              type="submit"
-              class="btn btn-outline-secondary"
-              name="counter"
-            >
+            <button type="submit" class="btn btn-outline-secondary" name="counter">
               Counter
             </button>
-            <button
-              type="submit"
-              class="btn btn-outline-success"
-              name="character"
-            >
+            <button type="submit" class="btn btn-outline-success" name="character">
               Character
             </button>
-            <button type="submit" class="btn btn-outline-danger" name="space">
-              Space
-            </button>
-            <button type="submit" class="btn btn-outline-warning" name="sort">
-              Sort
-            </button>
+            <button type="submit" class="btn btn-outline-danger" name="space">Space</button>
+            <button type="submit" class="btn btn-outline-warning" name="sort">Sort</button>
           </form>
         </div>
       </div>
