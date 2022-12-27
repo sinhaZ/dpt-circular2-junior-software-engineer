@@ -13,7 +13,7 @@ Optional <br/> 9. Create a button named sort which will sort the characters of a
 
 ==============================================================
 
--   Complete this task using raw PHP or Laravel Framework.
+-   Complete this task using raw PHP 
 -   OR complete this task using Javascript Framework.
 -   Update your readme file on how can we run the project.
 -   Mention how much time have you spent on this to complete.
@@ -23,3 +23,8 @@ Optional <br/> 9. Create a button named sort which will sort the characters of a
 -   Upload your code on GitHub and send us the link.
 -   message.to.zahid@gmail.com
 -   Video Instruction:-https://www.loom.com/share/f4cc434d4d704fdcb18678ebdd4a06e3
+==============================================================
+
+
+---Completing this task using raw PHP 
+---time have you spent on this to complete : 

@@ -28,6 +28,48 @@
                 name="name"
               />
             </div>
+
+            <div id="clientHelp" class="form-text">
+              Button description:
+              <ul>
+                <li>Reverse will reverse string</li>
+                <li>Counter will count vowels in any name</li>
+                <li>Character will find 3rd character of any name</li>
+                <li>Space will replace space with hyphens</li>
+                <li>
+                  Sort will sort the characters of any name using bubble sort
+                  algorithm
+                </li>
+              </ul>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-outline-primary"
+              name="reverse"
+            >
+              Reverse
+            </button>
+            <button
+              type="submit"
+              class="btn btn-outline-secondary"
+              name="counter"
+            >
+              Counter
+            </button>
+            <button
+              type="submit"
+              class="btn btn-outline-success"
+              name="character"
+            >
+              Character
+            </button>
+            <button type="submit" class="btn btn-outline-danger" name="space">
+              Space
+            </button>
+            <button type="submit" class="btn btn-outline-warning" name="sort">
+              Sort
+            </button>
           </form>
         </div>
       </div>
