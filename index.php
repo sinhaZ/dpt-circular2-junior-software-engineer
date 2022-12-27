@@ -14,7 +14,21 @@
     />
   </head>
   <body>
-    
+    <?php $result=" "?>
+  <?php 
+      if(isset($_POST['reverse'])){
+        // echo getRevStr($_POST['name']);
+        $result = getRevStr($_POST['name']);
+      }
+      function getRevStr($name){
+        $revstr="";
+        $count=strlen($name)-1;
+        for($i=$count;$i>=0;$i--){
+           $revstr.=$name[$i]; 
+        } 
+        return $revstr;
+      } 
+    ?>
     <div class="container">
       <div class="main">
         <div class="clientForm">
