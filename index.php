@@ -15,9 +15,13 @@
   </head>
   <body>
     <?php $result=" "?>
+    <?php $text=" "?>
+    <?php $nameValue=" "?>
   <?php 
       if(isset($_POST['reverse'])){
         // echo getRevStr($_POST['name']);
+        $nameValue = $_POST['name'];
+        $text ='';
         $result = getRevStr($_POST['name']);
       }
       function getRevStr($name){
@@ -31,6 +35,8 @@
     ?>
   <?php
     if(isset($_POST['counter'])){
+      $nameValue = $_POST['name'];
+      $text = 'Number of vowel is';
       $result = count_Vowels($_POST['name']);
     }
 
@@ -41,6 +47,8 @@
   ?>
   <?php 
     if(isset($_POST['character'])){
+      $nameValue = $_POST['name'];
+      $text = '3rd character is';
       $result = get3rdChar($_POST['name']);
   }
   function get3rdChar($name){
@@ -48,6 +56,8 @@
   ?>
   <?php 
     if(isset($_POST['space'])){
+      $nameValue = $_POST['name'];
+      $text ='';
       $result = spaceReplaceByHypen($_POST['name']);
     }
     function spaceReplaceByHypen($name){
@@ -58,15 +68,35 @@
   ?>
   <?php 
   if(isset($_POST['sort'])){
-      $result = StrSort($_POST['name']);
+    $nameValue = $_POST['name'];
+    $text = '';
+    $result = bubble_Sort1($_POST['name']);
   }
-  function StrSort($name){
-      $letters = str_split(strtolower($name)); sort($letters);
-      $ret = "";
-      foreach($letters as $letter){
-          $ret .= $letter;
+  // function StrSort($name){
+  //     $letters = str_split(strtolower($name)); sort($letters);
+  //     $ret = "";
+  //     foreach($letters as $letter){
+  //         $ret .= $letter;
+  //     }
+  //     return $ret;
+  // }
+  function bubble_Sort1($name){
+    $name_l=strtolower($name);
+    do
+    {
+    $swapped1 = false;
+      for( $i1 = 0, $c1 = strlen( $name_l ) - 1; $i1 < $c1; $i1++ )
+      {
+        if( $name_l[$i1] > $name_l[$i1 + 1] )
+        {
+        list( $name_l[$i1 + 1], $name_l[$i1] ) =
+        array( $name_l[$i1], $name_l[$i1 + 1] );
+        $swapped1 = true;
       }
-      return $ret;
+     }
+    }
+    while( $swapped1 );
+    return $name_l;
   }
 
   ?>
@@ -77,11 +107,11 @@
           <form method="post">
             <div class="mb-3">
               <label for="clientName" class="form-label">Full Name</label>
-              <input type="name" class="form-control" id="clientName" name="name" "/>
+              <input type="name" class="form-control" id="clientName" name="name" value="<?php echo ($nameValue) ?>"/>
             </div>
             <div class="mb-3">
               
-              <input type="name" class="form-control" id="result" name="result" value="<?php echo ($result) ?>"/>
+              <input type="name" class="form-control" id="result" name="result" value="<?php echo ($text. " " .$result) ?>"/>
             </div>
             <div id="clientHelp" class="form-text">
               Button description:
@@ -91,8 +121,7 @@
                 <li>Character will find 3rd character of any name</li>
                 <li>Space will replace space with hyphens</li>
                 <li>
-                  Sort will sort the characters of any name using bubble sort
-                  algorithm
+                  Sort will sort the characters of any name 
                 </li>
               </ul>
             </div>
